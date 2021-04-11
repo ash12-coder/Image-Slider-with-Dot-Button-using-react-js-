@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+.slider{
+  height: 400px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.slider img{
+  height: 400px;
+  width: 100%;
+  transition: 2s;
+}
+.slider img:hover{
+  transform: scale(1.2,1.2);
+}
+.btns{
+  height: 50px;
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  margin-top: -50px;
+  transform: rotate(360deg);
+}
+.btns button{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  opacity: .2;
+  transition: 2s;
+}
+.btns button:hover{
+  background: rgba(0,0,0,1);
+  opacity: 1;
+  transform: translateY(-5px);
+}
